@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Cadastro extends Model
 {
-    protected $fillable = ['name', 'email', 'email_verified_at', 'cpf','perfil', 'cep', 'complemento'];
+    protected $fillable = ['name', 'mail', 'confirmarEmail', 'cpf','identidade','perfil', 'cep', 'complemento'];
 
 }
 

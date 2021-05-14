@@ -16,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/cadastros/novo', 'CadastrosController@create');
+Route::post('/cadastros/novo', 'CadastrosController@stores')->name('resgistrar_cadastro');

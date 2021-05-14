@@ -16,9 +16,10 @@ class CreateCadastrosTable extends Migration
         Schema::create('cadastros', function (Blueprint $table) {
             $table->id();
             $table->string('name', 255)->unique();
-            $table->string('email', 255)->unique();
-            $table->timestamp('email_verified_at')->nullable();
+            $table->string('mail', 255)->unique();
+            $table->timestamp('confirmarEmail')->nullable();
             $table->string('cpf', 11)->unique();
+            $table->string('identidade', 30);
             $table->string('perfil', 30);
             $table->string('cep', 9);
             $table->string('rua', 100);
